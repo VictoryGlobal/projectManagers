@@ -340,3 +340,115 @@ footer p {
     Blue: #007bff
     Gold: #ffd700
 */
+
+/* Tablets and smaller laptops (≤ 1024px) */
+@media (max-width: 1024px) {
+  section {
+    padding: 2rem 1.5rem;
+  }
+
+  .project-grid,
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .image-slider {
+    width: 70%;
+  }
+}
+
+/* Mobile devices - tablets & phones (≤ 768px) */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 1.2rem 1rem;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 0.8rem 0;
+  }
+
+  header nav ul {
+    margin-top: 1rem;
+  }
+
+  /* Make logo centered on mobile instead of floated */
+  .logo img {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 70px;
+    height: auto;
+  }
+
+  .project-grid,
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .image-slider {
+    width: 90%;
+    height: 280px;          /* smaller height on mobile */
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+
+  #contact form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+/* Very small phones (≤ 480px) */
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  section {
+    padding: 1.8rem 0.8rem;
+  }
+
+  .image-slider {
+    height: 220px;
+    border-radius: 8px;
+  }
+
+  .slides img {
+    object-fit: contain;     /* better for small screens if images have important edges */
+  }
+
+  button {
+    padding: 12px 1rem;
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .social-media ul li {
+    margin: 0 0.8rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+  }
+}
