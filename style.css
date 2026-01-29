@@ -141,6 +141,7 @@ header {
         flex-direction: column;
         width: 50%;
         background: black;
+        opacity: 82%;
         position: absolute;
         top: 100%;
         left: 50%;
