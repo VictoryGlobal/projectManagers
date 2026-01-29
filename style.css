@@ -7,6 +7,168 @@
 }
 
 body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+  color: #1f2937;               /* dark slate for readability */
+  background-color: #f8fafc;    /* very light blue-gray */
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Main heading – big, gold-bordered for impact */
+h1 {
+  color: #1e3a8a;               /* deep royal blue */
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+h1 span.gold {
+  color: #d4af37;               /* shiny metallic gold */
+  background: linear-gradient(135deg, #d4af37, #e5b923);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gold underline accent */
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(90deg, #d4af37, #e5b923, #d4af37);
+  border-radius: 3px;
+}
+
+/* Section headings */
+h2 {
+  color: #1e40af;               /* strong blue */
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 4rem 0 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background: #d4af37;          /* shiny gold bar */
+  border-radius: 2px;
+}
+
+/* Gold shine on hover for interactivity */
+h2:hover {
+  color: #1e40af;
+}
+
+h2:hover::after {
+  background: linear-gradient(90deg, #e5b923, #d4af37, #e5b923);
+}
+
+/* Project/Service cards – blue border, gold accents */
+section > h3 + p,
+.service-block {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  border: 2px solid #bfdbfe;    /* light blue border */
+  margin-bottom: 2rem;
+  transition: all 0.25s ease;
+  border-left: 6px solid #2563eb; /* accent blue left bar */
+}
+
+section > h3 + p:hover,
+.service-block:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.15); /* blue glow */
+  border-left-color: #d4af37;   /* switch to gold on hover */
+}
+
+/* About section – highlighted box */
+h2 + p {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #bfdbfe;
+  font-size: 1.18rem;
+  line-height: 1.9;
+  color: #1e293b;
+}
+
+/* Contact – make it pop with gold CTA */
+h2:contains("Get in Touch") + p,
+.contact-section {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  font-weight: 700;
+  margin: 4rem 0;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.25);
+}
+
+.gold-cta {
+  display: inline-block;
+  margin-top: 1.8rem;
+  padding: 1.2rem 3rem;
+  background: linear-gradient(135deg, #d4af37, #e5b923);
+  color: #1e3a8a;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.gold-cta:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.6);
+  background: linear-gradient(135deg, #e5b923, #d4af37);
+}
+
+/* Links – gold underline */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 2px solid #d4af37;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: #d4af37;
+  border-bottom-color: #2563eb;
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  .container { padding: 2rem 1rem; }
+}
+body {
     line-height: 1.6;
     color: #333;
 
