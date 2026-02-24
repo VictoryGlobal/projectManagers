@@ -376,6 +376,14 @@ section h2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/site\ supervision.png);
 }
 
+#about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/site-in-nigeria.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px;
+    border-radius: 10px;
+}
+
 .project-grid,
 .service-grid {
     display: grid;
@@ -417,7 +425,7 @@ section h2 {
 
 /* Footer */
 footer {
-    background: #021e3c;
+    background: black;
     color: #fff;
     padding: 2rem;
     text-align: center;
