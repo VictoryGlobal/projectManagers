@@ -386,7 +386,7 @@ section h2 {
 }
 
 #about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/site-in-nigeria.jfif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(site-in-nigeria.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 50px;
