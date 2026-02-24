@@ -10,7 +10,7 @@ body {
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   line-height: 1.7;
   color: #1f2937;               /* dark slate for readability */
-  background-color: #f8fafc;    /* very light blue-gray */
+  background-color: #7cb8ec;    /* very light blue-gray */
   min-height: 100vh;
 }
 
@@ -367,7 +367,7 @@ section h2 {
 }
 
 #home {
-    background: #f0f8ff;
+    background: #7cb8ec;
 }
 .projects-services {
     height: 1000px;
